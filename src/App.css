@@ -1,0 +1,119 @@
+/* Container for the whole app */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  background-color: #f7f9fc;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #e1bee7;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus {
+  border-color: #d81b60;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f48fb1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ec407a;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Contact list item */
+li {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr auto;
+  gap: 10px;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact details layout */
+.contact-info {
+  display: contents; /* Ensures the items align in grid columns */
+}
+
+.contact-info span {
+  display: block;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Buttons container */
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Buttons styles */
+li button {
+  background-color: #ff6f61;
+  border-radius: 10px;
+}
+
+li button:hover {
+  background-color: #e64a19;
+}
+
+.edit-button {
+  background-color: #ffeb3b;
+  color: #000;
+}
+
+.edit-button:hover {
+  background-color: #fdd835;
+  color: #000;
+}
+
+/* Ensure buttons are stacked vertically */
+.buttons-container button {
+  margin-bottom: 10px;
+}
+
+/* Remove bottom margin from last button in the container */
+.buttons-container button:last-child {
+  margin-bottom: 0;
+}
