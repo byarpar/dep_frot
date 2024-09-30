@@ -19,7 +19,7 @@ const App = () => {
 
   const fetchContacts = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/contact');
+      const response = await axios.get('https://your-backend-railway-url.up.railway.app/contact');
       setContacts(response.data);
     } catch (error) {
       console.error('Error fetching contacts:', error);
@@ -37,10 +37,10 @@ const App = () => {
     e.preventDefault();
     try {
       if (editId) {
-        await axios.put(`http://localhost:3000/contact/${editId}`, formData);
+        await axios.put(`https://your-backend-railway-url.up.railway.app/contact/${editId}`, formData);
         setEditId(null);
       } else {
-        await axios.post('http://localhost:3000/contact', formData);
+        await axios.post('https://your-backend-railway-url.up.railway.app/contact', formData);
       }
       setFormData({
         firstName: '',
@@ -68,7 +68,7 @@ const App = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/contact/${id}`);
+      await axios.delete(`https://your-backend-railway-url.up.railway.app/contact/${id}`);
       fetchContacts();
     } catch (error) {
       console.error('Error deleting contact:', error);
@@ -140,3 +140,4 @@ const App = () => {
 };
 
 export default App;
+ 
