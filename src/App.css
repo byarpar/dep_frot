@@ -116,3 +116,42 @@ ul {
 .contact-item {
   margin-bottom: 10px; /* Add space between items */
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-form {
+      padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  button {
+      width: 100%; /* Full width on mobile */
+      margin: 5px 0; /* Reduce margin */
+  }
+
+  .contact-item {
+      flex-direction: column; /* Stack buttons below details */
+      align-items: flex-start; /* Align items to the left */
+  }
+
+  .contact-actions {
+      width: 100%; /* Full width for action buttons */
+      justify-content: space-between; /* Space between buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.5em; /* Adjust heading size */
+  }
+
+  h2 {
+      font-size: 1.2em; /* Adjust subheading size */
+  }
+
+  button {
+      padding: 8px 12px; /* Smaller button size */
+  }
+}
