@@ -119,6 +119,7 @@ ul {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  
   .contact-form {
       padding: 15px;
   }
@@ -127,7 +128,7 @@ ul {
   input[type="email"],
   input[type="tel"],
   button {
-      width: 100%; /* Full width on mobile */
+      width: 92%; /* Full width on mobile */
       margin: 5px 0; /* Reduce margin */
   }
 
